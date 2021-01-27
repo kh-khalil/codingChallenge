@@ -1,0 +1,125 @@
+.page {
+   height: 100vh;
+   width: 100%;
+   text-align: center;
+ }
+ 
+ .landing-page-container {
+   display: grid;
+   height: 100%;
+   min-height: 100%;
+   width: 100%;
+   background-color: #a7a7a7;
+   overflow-y: scroll;
+ }
+ 
+ 
+ button {
+   background-color: seashell;
+   border-radius: 5px;
+   border: none;
+   font-size: 18px;
+   color: #000000;
+   box-sizing: content-box;
+   cursor: pointer;
+   padding: 0.5rem;
+   text-decoration: underline;
+ }
+ 
+ button:focus {
+   outline: none;
+ }
+
+ .results-container {
+   margin-top: 10px;
+   height: auto;
+   width: 100%;
+   display: grid;
+   grid-template-columns: auto;
+   align-items: flex-start;
+ }
+ 
+ .row {
+   display: flex;
+   cursor: pointer;
+   background-color: transparent;
+   border-radius: 5px;
+   align-items: center;
+   justify-content: flex-start;
+   pointer-events: none;
+   margin: 1rem;
+ }
+ 
+ .repo-name > h2 {
+   color: seashell;
+   pointer-events: auto;
+   word-wrap: anywhere;
+   margin-top: 0;
+   text-align: left;
+ }
+
+ .repo-name > p {
+  text-align: left;
+ }
+
+ .repo-name > p > span{
+   border: 2px solid black;
+   padding: 2px;
+ }
+
+ .repo-name > h2 > a{
+   color: rgb(0, 0, 0);
+   text-align: left;
+   font-weight: normal;
+ }
+ 
+ .row:hover {
+   background-color: seashell !important;
+   border: 1.5px solid rgb(0, 0, 0);
+ }
+ 
+ .row > h2:hover {
+   color: #282D35;
+ }
+ 
+ .repo-name {
+   margin-left: 5px;
+ }
+
+ .pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  cursor: pointer;
+  height: min-content;
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  border-radius: 5px;
+  background-color: seashell;
+  justify-self: center;
+  }
+
+  .pagination a {
+    display: flex;
+    justify-self: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1.5px solid #409ad6;
+    color: #000000;
+    margin: 0.25rem;
+  }
+
+  .pagination__link {
+    font-weight: bold;
+  }
+
+  .pagination__link--active a {
+    color: #fff;
+    background: #409ad6;
+  }
+
+  .pagination__link--disabled a {
+    color: rgb(77, 77, 77);
+    border: 1.5px solid rgb(77, 77, 77);
+  }
