@@ -15,7 +15,7 @@
    * Username and avatar of the owner. 
 
 * GitHub Api:
-   `https://api.github.com/search/repositories?q=created:${todayDate}&sort=stars&order=desc&page=${pageNumber}`
+   * `https://api.github.com/search/repositories?q=created:${todayDate}&sort=stars&order=desc&page=${pageNumber}`
 * Where *** todayDate & pageNumber *** are 2 variables that change according to date and page number 
 
 ## Technologies used: 
